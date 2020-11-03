@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start XAMPP",
+            "type": "process",
+            "command": ".\\scripts\\start xampp.bat",
+            "presentation": {
+                "reveal": "never",
+                "revealProblems": "never"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Toggle XAMPP",
+            "type": "process",
+            "command": ".\\scripts\\toggle xampp.bat",
+            "presentation": {
+                "reveal": "never",
+                "revealProblems": "never"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Stop XAMPP",
+            "type": "process",
+            "command": ".\\scripts\\stop xampp.bat",
+            "presentation": {
+                "reveal": "never",
+                "revealProblems": "never"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

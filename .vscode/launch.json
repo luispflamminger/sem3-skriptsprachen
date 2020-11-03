@@ -50,9 +50,12 @@
     ],
     "compounds": [
         {
+            //Launches Debug Listener and the Script in Edge
+            //Starts XAMPP Apache and MySQL Server if not already running
             "name": "Launch in Edge with Debugging",
             "configurations": ["Listen for XDebug", "Launch in Edge"],
             "stopAll": true,
+            "preLaunchTask": "Start XAMPP",
             "presentation": {
                 "hidden": false,
                 "group": "PHP",
