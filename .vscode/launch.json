@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            //Launches the currently opened script in MS Edge (not attached to VSCode or Debugging by default)
+            "name": "Launch in Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            //"url": "http://localhost/PHP_WS2020/03_Einfuehrung/HelloWorld.php",
+            "url": "http://localhost/${workspaceFolderBasename}/${relativeFile}",
+            "presentation": {
+                "hidden": false,
+                "group": "PHP",
+                "order": 2
+            }
+        },        
+        {
+            //Starts listening for the debugger.
+            //If the php-server is executing code, XDebug will send debug information to VS Code
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000,
+            "presentation": {
+                "hidden": false,
+                "group": "PHP",
+                "order": 4
+            }
+        },
+        {
+            //Launches the currently opened script with debugger, but not in a browser window
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000,
+            "runtimeExecutable": "D:\\xampp\\php\\php.exe",
+            "presentation": {
+                "hidden": false,
+                "group": "PHP",
+                "order": 3
+            }
+        },
+    ],
+    "compounds": [
+        {
+            "name": "Launch in Edge with Debugging",
+            "configurations": ["Listen for XDebug", "Launch in Edge"],
+            "stopAll": true,
+            "presentation": {
+                "hidden": false,
+                "group": "PHP",
+                "order": 1
+            }
+        }
+    ]
+}
