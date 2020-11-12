@@ -12,7 +12,8 @@
         <?php
 
             $dateiname = "Keiser.jpg";
-            if (preg_match("/JPE?G/i", substr($dateiname, strrpos($dateiname, "."), ))) {
+            //if (preg_match("/JPE?G/i", substr($dateiname, strrpos($dateiname, "."), ))) {
+            if (preg_match("/\.JPE?G$/i", $dateiname)) {
                 echo "Datei ist im Format JPG!";
             } else {
                 echo "Datei ist in einem anderen Format.";
