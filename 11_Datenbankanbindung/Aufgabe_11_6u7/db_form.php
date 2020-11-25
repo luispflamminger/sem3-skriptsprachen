@@ -30,7 +30,7 @@
     <body>
         <p>Geben Sie bitte einen vollständigen Datensatz ein<br>und senden Sie das Formular ab:</p>
 
-        <form action="form.php" method="POST">
+        <form action="db_form.php" method="POST">
             <p><input name="hersteller" /> Hersteller</p>
             <p><input name="typ" /> Typ</p>
             <p><input name="gb" /> GB</p>
@@ -39,6 +39,6 @@
             <p><input name="prod" /> Datum der ersten Produktion (Format 'yyyy-mm-dd')</p>
             <p><input type="submit" name="gesendet" /><input type="reset" /></p>
         </form>
-        <p>Alle Datensätze <a href="tabelle.php">anzeigen</a></p>
+        <p>Alle Datensätze <a href="db_table.php">anzeigen</a></p>
     </body>
 </html>
