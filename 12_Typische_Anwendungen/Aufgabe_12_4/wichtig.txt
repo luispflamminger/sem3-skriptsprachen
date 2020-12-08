@@ -1,0 +1,8 @@
+Zum Ausführen rufen Sie bitte die Datei
+
+index.php
+
+auf, z.B.:
+
+http://localhost/index.php
+

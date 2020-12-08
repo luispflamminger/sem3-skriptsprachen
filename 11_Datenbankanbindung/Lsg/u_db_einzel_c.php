@@ -15,12 +15,11 @@
 
    $num = mysqli_affected_rows($con);
    if ($num>0)
-      echo "<p>Der Datensatz wurde geändert</p>";
+      echo "<p>Der Datensatz wurde geï¿½ndert</p>";
    else
-      echo "<p>Der Datensatz wurde nicht geändert</p>";
+      echo "<p>Der Datensatz wurde nicht geï¿½ndert</p>";
    mysqli_close($con);
 ?>
-<p>Zurück zur <a href="u_db_einzel_a.php">Auswahl</a></p>
+<p>Zurï¿½ck zur <a href="u_db_einzel_a.php">Auswahl</a></p>
 </body>
 </html>
-
